@@ -16,16 +16,18 @@ class Index extends Component {
 
   render() {
     return (
-      <div>
-        <div className="offcanvas"></div>
-        <div id="content" className="one-nevbar">
-          <section>
-            <h1>New Project</h1>
-            <p>This is project starter</p>
-          </section>
+      <section class="hero is-primary">
+        <div class="hero-body">
+          <div class="container">
+            <h1 class="title">
+              Home
+            </h1>
+            <h2 class="subtitle">
+              Project Starter
+            </h2>
+          </div>
         </div>
-        <div className="offcanvas"></div>
-      </div>
+      </section>
     )
   }
 }

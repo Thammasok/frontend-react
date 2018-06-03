@@ -9,7 +9,7 @@ import NotFound from '../../Other/Notfound'
 class Index extends Component {
   render() {    
     return (
-      <div>
+      <section class="hero is-medium is-bold">
         <Header />
 
         <Switch>
@@ -18,7 +18,7 @@ class Index extends Component {
           ))}
           <Route component={NotFound}/>
         </Switch>
-      </div>
+      </section>
     )
   }
 }

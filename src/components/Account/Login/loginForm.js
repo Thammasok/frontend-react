@@ -19,31 +19,43 @@ class LoginForm extends Component {
 
   render() {
     return (
-      <div className="col-md-6">
-        <div className="row" style={{ padding: '30px 0' }}>
-          <div className="col-sm-10 col-sm-offset-1">
-            <div className="text-center">
-              <img src="https://fs.chomchob.com/file/image?path=/admin/upload/2018-05-30/2e1d9cd3-9a83-443a-abd4-a5a07209a207" alt="..." width="60px" /><br />
-              <span className="text-xxxl text-light text-accent">Chom</span><span className="text-xxxl text-second">CHOB</span><br />
-              <p className="text-lg text-light text-default-light">Login to use Dashboard of ChomCHOB Platform.</p>
+      <div className="column is-half is-offset-one-quarter">
+        <form>
+          <div className="field">
+            <label className="label">Email</label>
+            <div className="control has-icons-left has-icons-right">
+              <input className="input" type="email" placeholder="Email"  />
+              <span className="icon is-small is-left">
+                <i className="fas fa-envelope"></i>
+              </span>
             </div>
-            <form onSubmit={this.handleSubmit.bind(this)} method="POST" className="form">
-              <div className="form-group floating-label">
-                <input type="text" className="form-control" id="username-tb" name="username" value={this.state.username} onChange={this.handleChange.bind(this)} />
-                <label htmlFor="username">Username</label>
-              </div>
-              <div className="form-group floating-label">
-                <input type="password" className="form-control" id="password-tb" name="password" value={this.state.password} onChange={this.handleChange.bind(this)} />
-                <label htmlFor="password">Password</label>
-              </div>
-              <div className="text-center">
-                <p>
-                  <button type="submit" className="btn btn-primary">Login</button>
-                </p>
-              </div>
-            </form>
           </div>
-        </div>
+
+          <div className="field">
+            <label className="label">Password</label>
+            <div className="control has-icons-left has-icons-right">
+              <input className="input" type="text" placeholder="Password" />
+              <span className="icon is-small is-left">
+                <i className="fas fa-user"></i>
+              </span>
+            </div>
+          </div>
+
+          <div className="field">
+            <div className="control">
+              <label className="checkbox">
+                <input type="checkbox" />
+                {` `}Remember me
+              </label>
+            </div>
+          </div>
+
+          <div className="field is-grouped">
+            <div className="control">
+              <button className="button is-link">Login</button>
+            </div>
+          </div>
+        </form>
       </div>
     );
   }
