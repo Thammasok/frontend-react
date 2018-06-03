@@ -3,7 +3,7 @@
   "version": "0.1.4",
   "private": true,
   "scripts": {
-    "start": "PORT=3210 react-scripts start",
+    "start": "react-scripts start",
     "start:server": "node ./server.js",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",

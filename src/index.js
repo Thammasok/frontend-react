@@ -1,7 +1,7 @@
 import 'whatwg-fetch'
 import React from 'react'
 import ReactDOM from 'react-dom'
-import localStorage from 'localStorage'
+// import localStorage from 'localStorage'
 
 import registerServiceWorker from './registerServiceWorker'
 
