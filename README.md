@@ -14,24 +14,46 @@ This project was frontend-react with [Create React App](https://github.com/faceb
 After creation, your project should look like this:
 
 ```
-my-app/
-  README.md
+frontend-react/
   node_modules/
   package.json
+  README.md
+  server.js
   public/
     index.html
     favicon.ico
   src/
     action/
     components/
-      App.js
-      Home.js
+      Account
+        Login
+          banner.js
+          index.js
+          loginform.js
+      Home
+        index.js
+      Include
+        Header
+          index.js
+      Layout
+        App
+          index.js
+      Other
+        Notfound
+          index.js
+      Root.js
     reducers/
+      example.js
+      index.js
+      messages.js
     store/
+      configureStore.js
     test/
       App.test.js
+    config.js
     index.js
-    router-config.js
+    registerServiceWorker.js
+    routers.js
 ```
 
 For the project to build, **these files must exist with exact filenames**:

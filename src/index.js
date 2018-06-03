@@ -1,29 +1,23 @@
-import 'whatwg-fetch';
-import React from 'react';
-import ReactDOM from 'react-dom';
-import {BrowserRouter} from 'react-router-dom';
+import 'whatwg-fetch'
+import React from 'react'
+import ReactDOM from 'react-dom'
+import localStorage from 'localStorage'
 
-import registerServiceWorker from './registerServiceWorker';
-import { App } from './components';
+import registerServiceWorker from './registerServiceWorker'
 
-// import { Provider } from 'react-redux';
-// import localStorage from 'localStorage';
-// import configureStore from './store/configureStore';
-// import getRoutes from './routes';
+import Root from './components/Root'
 
-// var auth = JSON.parse(localStorage.getItem('userAuth'));
-// var initialState = {
-//   auth: auth,
-//   messages: {}
-// };
+import configureStore from './store/configureStore'
 
-// const store = configureStore(initialState);
+const initialState = {
+  messages: {}
+};
+
+const store = configureStore(initialState)
 
 ReactDOM.render(
-  <BrowserRouter>
-    <App />
-  </BrowserRouter>
-  , document.getElementById('root')
+  <Root store={store} />,
+  document.getElementById('root')
 );
 
 registerServiceWorker();
