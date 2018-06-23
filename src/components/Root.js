@@ -1,17 +1,21 @@
-import React from 'react'
+import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { Provider } from 'react-redux'
 import { BrowserRouter } from 'react-router-dom'
 
-import AppLayout from './Layout/App'
+import RootLayout from './Layout'
 
-const Root = ({ store }) => (
-  <Provider store={store}>
-    <BrowserRouter>
-      <AppLayout />
-    </BrowserRouter>
-  </Provider>
-)
+class Root extends Component {
+  render() {
+    return (
+      <Provider store={this.props.store}>
+        <BrowserRouter>
+          <RootLayout layout="app" />
+        </BrowserRouter>
+      </Provider>
+    )
+  }
+}
 
 Root.propTypes = {
   store: PropTypes.object.isRequired

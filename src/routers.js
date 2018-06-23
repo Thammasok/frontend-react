@@ -3,6 +3,7 @@ import { Redirect } from 'react-router'
 
 import Home from './components/Home'
 import Login from './components/Account/Login/'
+import NotFound from './components/Other/Notfound'
 
 import fakeAuth from './actions/Auth'
 
@@ -20,5 +21,9 @@ export const routes = [
 	{
 		path:'/login',
 		component: Login
+	},
+	{
+		path:'',
+		component: NotFound
 	}
 ]

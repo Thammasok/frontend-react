@@ -16,18 +16,20 @@ class Index extends Component {
 
   render() {
     return (
-      <section class="hero is-primary">
-        <div class="hero-body">
-          <div class="container">
-            <h1 class="title">
-              Home
-            </h1>
-            <h2 class="subtitle">
-              Project Starter
-            </h2>
+      <div>
+        <section className="hero is-primary">
+          <div className="hero-body">
+            <div className="container">
+              <h1 className="title">
+                Home
+              </h1>
+              <h2 className="subtitle">
+                Project Starter
+              </h2>
+            </div>
           </div>
-        </div>
-      </section>
+        </section> 
+      </div>
     )
   }
 }
